@@ -68,5 +68,9 @@ export default defineType({
       type: 'YoutubeEmbed',
       title: 'Youtube'
     }),
+    defineArrayMember({
+      type: 'BlockGallery',
+      title: 'Galeria'
+    }),
   ],
 })
