@@ -23,7 +23,7 @@ export default {
     },
     prepare({ title }) {
       return {
-        title: `HeroSlider: ${title}`,
+        title: `Galería: ${title}`,
       };
     },
   },
