@@ -2,10 +2,6 @@ export const myStructure = (S) =>
   S.list()
     .title('Contenido')
     .items([
-      ...S.documentTypeListItems().filter(
-        (listItem) => !['quienes_somos'].includes(listItem.getId())
-      ),
-      S.divider(),
       S.listItem()
         .title('Institucional')
         .child(
@@ -14,11 +10,38 @@ export const myStructure = (S) =>
             .items([
               S.listItem()
                 .title('Quienes Somos')
-                .child(
-                  S.document().schemaType('quienes_somos').documentId('quienes_somos')
-                ),
+                .child(S.document().schemaType('quienes_somos').documentId('quienes_somos')),
+              S.listItem()
+                .title('Nuestra Historia')
+                .child(S.document().schemaType('nuestra_historia').documentId('nuestra_historia')),
             ])
         ),
+      S.divider(),
+      S.listItem()
+        .title('Calendario')
+        .schemaType('calendarioLudico')
+        .child(S.documentTypeList('calendarioLudico').title('Calendario')),
+      S.divider(),
+      S.listItem()
+        .title('Recursos')
+        .schemaType('recursos')
+        .child(S.documentTypeList('recursos').title('Recursos')),
+      S.divider(),
+      S.listItem()
+        .title('Que hacemos')
+        .schemaType('quehacemos')
+        .child(S.documentTypeList('quehacemos').title('Que hacemos')),
+      S.divider(),
+      ...S.documentTypeListItems().filter(
+        (listItem) =>
+          ![
+            'quienes_somos',
+            'nuestra_historia',
+            'recursos',
+            'quehacemos',
+            'calendarioLudico',
+          ].includes(listItem.getId())
+      ),
     ])
 // .items([
 //   ...S.documentTypeListItems().filter(listItem => !['noticias', 'categoria-noticias'].includes(listItem.getId())),
