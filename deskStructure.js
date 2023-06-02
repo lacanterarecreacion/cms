@@ -1,7 +1,7 @@
 
 import { AiOutlineFileText } from "react-icons/ai";
 import { BsCalendarCheck } from "react-icons/bs";
-import { Gi3DMeeple, GiSpellBook, GiFruitTree } from "react-icons/gi";
+import { Gi3DMeeple, GiSpellBook, GiFruitTree, GiCardDraw } from "react-icons/gi";
 
 export const myStructure = (S) =>
   S.list()
@@ -22,6 +22,10 @@ export const myStructure = (S) =>
                 .title('Nuestra Historia')
                 .icon(AiOutlineFileText)
                 .child(S.document().schemaType('nuestra_historia').documentId('nuestra_historia')),
+                S.listItem()
+                .title('Colaborá')
+                .icon(GiCardDraw)
+                .child(S.document().schemaType('colabora').documentId('colabora')),
             ])
         ),
       S.divider(),

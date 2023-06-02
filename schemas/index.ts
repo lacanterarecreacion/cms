@@ -4,6 +4,7 @@ import QueHacemos from './que-hacemos'
 import QuienesSomos from './quienes-somos'
 import NuestraHistoria from './nuestra-historia'
 import PlugBlockeditor from './plug-blockeditor'
+import Colabora from './colabora'
 // import CategoriaNoticias from './categoria-noticias'
 // import Noticias from './noticias'
 
@@ -18,6 +19,7 @@ export const schemaTypes = [
   QuienesSomos,
   PlugBlockeditor,
   NuestraHistoria,
+  Colabora,
   // Noticias,
   // CategoriaNoticias,
   blockContent,
