@@ -60,14 +60,7 @@ export default defineType({
       type: 'text',
     }),
   ],
-  fieldsets: [
-    {
-      description: 'Details of the drop that is about to be published',
-      name: 'drop-details',
-      title: 'Drop Details',
-      options: { collapsed: true, collapsible: true },
-    },
-  ],
+
   preview: {
     select: {
       title: 'title',

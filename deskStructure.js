@@ -55,6 +55,7 @@ export const myStructure = (S) =>
             'recursos',
             'quehacemos',
             'calendarioLudico',
+            'colabora'
           ].includes(listItem.getId())
       ),
     ])

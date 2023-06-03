@@ -9,27 +9,39 @@ export default defineType({
       name: 'title',
       title: 'Título',
       type: 'string',
+      fieldset: 'hero',
     }),
     defineField({
       name: 'mainImage',
       title: 'Imagen destacada',
       type: 'image',
+      fieldset: 'hero',
     }),
     defineField({
       name: 'description',
       title: 'Descripción corta',
       type: 'text',
+      fieldset: 'hero',
     }),
     defineField({
       name: 'content',
       type: 'array',
-      title: 'Page sections',
-      description: 'Add, edit, and reorder sections',
+      title: 'Secciones',
+      description: 'Agrega, edita, y reordena secciones',
       of: [
         { type: 'BlockGallery' },
         { type: 'PlugBlockeditor' },
+        { type: 'PlugBlockeditorGrillaDoble' },
       ],
     }),
+  ],
+  fieldsets: [
+    {
+      description: 'Titulo, imagen y descripción.',
+      name: 'hero',
+      title: 'Hero',
+      options: { collapsed: true, collapsible: true },
+    },
   ],
   preview: {
     select: {

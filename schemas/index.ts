@@ -4,25 +4,22 @@ import QueHacemos from './que-hacemos'
 import QuienesSomos from './quienes-somos'
 import NuestraHistoria from './nuestra-historia'
 import PlugBlockeditor from './plug-blockeditor'
+import PlugBlockeditorGrillaDoble from './plug-blockeditor-grilla-doble'
 import Colabora from './colabora'
-// import CategoriaNoticias from './categoria-noticias'
-// import Noticias from './noticias'
-
-
 import Recursos from './recursos'
 import YoutubeEmbed from './youtube-embed'
 import BlockGallery from './block-gallery'
+
 export const schemaTypes = [
-  Recursos,
-  QueHacemos,
-  CalendarioLudico,
-  QuienesSomos,
-  PlugBlockeditor,
-  NuestraHistoria,
-  Colabora,
-  // Noticias,
-  // CategoriaNoticias,
   blockContent,
+  BlockGallery,
+  CalendarioLudico,
+  Colabora,
+  NuestraHistoria,
+  PlugBlockeditor,
+  PlugBlockeditorGrillaDoble,
+  QueHacemos,
+  QuienesSomos,
+  Recursos,
   YoutubeEmbed,
-  BlockGallery
 ]
