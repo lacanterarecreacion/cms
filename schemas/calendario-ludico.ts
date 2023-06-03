@@ -20,10 +20,10 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'image',
+      description: 'Servida desde Cloudinary',
       title: 'Imagen destacada',
+      name: 'image',
       type: 'cloudinary.asset',
-      description: 'This asset is served from Cloudinary',
     }),
     defineField({
       name: 'link',

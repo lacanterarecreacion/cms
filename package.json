@@ -29,6 +29,7 @@
     "sanity": "^3.11.5",
     "sanity-plugin-cloudinary": "^1.1.1",
     "sanity-plugin-dashboard-widget-netlify": "^2.0.1",
+    "sanity-plugin-media": "^2.0.5",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
