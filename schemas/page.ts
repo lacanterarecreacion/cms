@@ -15,10 +15,12 @@ export default defineType({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+      fieldset: 'hero',
       options: {
         source: 'title',
         maxLength: 96,
       },
+      description: 'http://lacanterarecreacion.netlify.app/{{slug}}',
     }),
     defineField({
       name: 'mainImage',
