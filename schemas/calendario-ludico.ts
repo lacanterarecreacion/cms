@@ -54,10 +54,11 @@ export default defineType({
       title: 'Formato del evento',
       type: 'string',
     }),
+
     defineField({
-      name: 'description',
-      title: 'Descripcion',
-      type: 'text',
+      name: 'body',
+      title: 'Texto',
+      type: 'blockContentCalendarioLudico',
     }),
   ],
 

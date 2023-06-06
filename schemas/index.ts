@@ -1,4 +1,5 @@
 import blockContent from './blockContent'
+import blockContentCalendarioLudico from './blockContentCalendarioLudico'
 import CalendarioLudico from './calendario-ludico'
 import QueHacemos from './que-hacemos'
 import QuienesSomos from './quienes-somos'
@@ -14,6 +15,7 @@ import Page from './page'
 
 export const schemaTypes = [
   blockContent,
+  blockContentCalendarioLudico,
   PlugBlockeditorHero,
   BlockGallery,
   CalendarioLudico,
