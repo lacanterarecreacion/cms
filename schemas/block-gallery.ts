@@ -23,7 +23,7 @@ export default {
     },
     prepare({ title }) {
       return {
-        title: `Galería: ${title}`,
+        title: `Galería: ${title ? title : 'Sin nombre' }`,
       };
     },
   },
