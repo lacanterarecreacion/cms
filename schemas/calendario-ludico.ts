@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'calendarioLudico',
@@ -20,12 +20,6 @@ export default defineType({
       },
     }),
     defineField({
-      description: 'Servida desde Cloudinary',
-      title: 'Imagen destacada',
-      name: 'image',
-      type: 'cloudinary.asset',
-    }),
-    defineField({
       name: 'link',
       title: 'Link al evento',
       type: 'url',
@@ -40,6 +34,13 @@ export default defineType({
       title: 'Fecha y hora de fin del evento',
       type: 'datetime',
     }),
+    {
+      title: 'Varios días',
+      name: 'multipleDays',
+      initialValue: false,
+      description: 'Activar si el evento dura más de un día. De ser así favor de poner el cronograma en la descripción. (por ahora :)',
+      type: 'boolean'
+    },
     defineField({
       initialValue: 'red',
       name: 'color',
@@ -47,18 +48,23 @@ export default defineType({
         direction: 'horizontal',
         layout: 'radio',
         list: [
-          {value: 'purple', title: 'Presencial'},
-          {value: '#ea580c', title: 'Virtual'},
+          { value: 'purple', title: 'Presencial' },
+          { value: '#ea580c', title: 'Virtual' },
         ],
       },
       title: 'Formato del evento',
       type: 'string',
     }),
-
     defineField({
       name: 'body',
       title: 'Texto',
       type: 'blockContentCalendarioLudico',
+    }),
+    defineField({
+      description: 'Servida desde Cloudinary',
+      title: 'Imagen destacada',
+      name: 'image',
+      type: 'cloudinary.asset',
     }),
   ],
 
