@@ -61,10 +61,12 @@ export default defineType({
       type: 'blockContentCalendarioLudico',
     }),
     defineField({
-      description: 'Servida desde Cloudinary',
+      name: 'mainImage',
       title: 'Imagen destacada',
-      name: 'image',
-      type: 'cloudinary.asset',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     }),
   ],
 

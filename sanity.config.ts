@@ -4,9 +4,9 @@ import { deskTool } from 'sanity/desk'
 import { schemaTypes } from './schemas'
 import { getStartedPlugin } from './plugins/sanity-plugin-tutorial'
 import { dashboardTool } from '@sanity/dashboard'
-import {
-  cloudinarySchemaPlugin,
-} from 'sanity-plugin-cloudinary'
+// import {
+//   cloudinarySchemaPlugin,
+// } from 'sanity-plugin-cloudinary'
 import { myStructure } from './deskStructure'
 import { netlifyWidget } from "sanity-plugin-dashboard-widget-netlify";
 import { media } from 'sanity-plugin-media'
@@ -23,7 +23,7 @@ export default defineConfig({
     }),
     media(),
     // visionTool(),
-    cloudinarySchemaPlugin(),
+    // cloudinarySchemaPlugin(),
     dashboardTool({
       widgets: [
         netlifyWidget({
