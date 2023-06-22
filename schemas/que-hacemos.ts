@@ -1,10 +1,16 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'quehacemos',
   title: 'Que Hacemos',
   type: 'document',
   fields: [
+    defineField({
+      name: 'highlight',
+      title: 'Trabajo destacado',
+      initialValue: false,
+      type: 'boolean'
+    }),
     defineField({
       name: 'title',
       title: 'Título',
@@ -33,6 +39,7 @@ export default defineType({
     //   title: 'Publicado el',
     //   type: 'datetime',
     // }),
+
     defineField({
       name: 'description',
       title: 'Descripción corta',
