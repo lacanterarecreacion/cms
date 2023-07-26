@@ -25,6 +25,12 @@ export default defineType({
       type: 'url',
     }),
     defineField({
+      name: 'location',
+      title: 'Lugar',
+      description: 'Dirección donde se realizará la actividad',
+      type: 'string',
+    }),
+    defineField({
       name: 'start',
       title: 'Fecha y hora de Inicio del evento',
       type: 'datetime',
@@ -34,13 +40,13 @@ export default defineType({
       title: 'Fecha y hora de fin del evento',
       type: 'datetime',
     }),
-    {
-      title: 'Varios días',
-      name: 'multipleDays',
-      initialValue: false,
-      description: 'Activar si el evento dura más de un día. De ser así favor de poner el cronograma en la descripción. (por ahora :)',
-      type: 'boolean'
-    },
+    // {
+    //   title: 'Varios días',
+    //   name: 'multipleDays',
+    //   initialValue: false,
+    //   description: 'Activar si el evento dura más de un día. De ser así favor de poner el cronograma en la descripción. (por ahora :)',
+    //   type: 'boolean'
+    // },
     defineField({
       initialValue: 'red',
       name: 'color',
