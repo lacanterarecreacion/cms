@@ -54,8 +54,8 @@ export default defineType({
         direction: 'horizontal',
         layout: 'radio',
         list: [
-          { value: 'purple', title: 'Presencial' },
-          { value: '#ea580c', title: 'Virtual' },
+          { value: '#e9d5ff', title: 'Presencial' },
+          { value: '#fed7aa', title: 'Virtual' },
         ],
       },
       title: 'Formato del evento',
