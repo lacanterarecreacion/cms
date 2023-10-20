@@ -53,6 +53,7 @@ export const myStructure = (S) =>
             'quienes_somos',
             'nuestra_historia',
             'recursos',
+            'page',
             'quehacemos',
             'calendarioLudico',
             'colabora',

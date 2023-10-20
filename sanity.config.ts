@@ -22,7 +22,7 @@ export default defineConfig({
       structure: myStructure,
     }),
     media(),
-    // visionTool(),
+    //  visionTool(),
     // cloudinarySchemaPlugin(),
     dashboardTool({
       widgets: [

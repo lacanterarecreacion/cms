@@ -17,7 +17,16 @@ export default {
       name: "imagesGallery",
       title: "Images gallery",
       type: "array",
-      of: [{ type: "image" }],
+      of: [{
+        type: "image",
+        fields: [
+          {
+            name: 'alt',
+            type: 'string',
+          }
+        ]
+      }],
+
     },
   ],
   preview: {
