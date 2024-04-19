@@ -7,6 +7,7 @@ export default {
       name: "heading",
       type: "string",
       title: "Heading",
+      description: 'Requerido pero solo para uso interno'
     },
     {
       name: "imagesGallery",

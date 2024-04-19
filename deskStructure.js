@@ -1,7 +1,7 @@
 
 import { AiOutlineFileText } from "react-icons/ai";
 import { BsCalendarCheck } from "react-icons/bs";
-import { Gi3DMeeple, GiSpellBook, GiFruitTree, GiCardDraw } from "react-icons/gi";
+import { Gi3DMeeple, GiSpellBook, GiFruitTree, GiCardDraw, GiCastle  } from "react-icons/gi";
 
 export const myStructure = (S) =>
   S.list()
@@ -47,9 +47,27 @@ export const myStructure = (S) =>
         .schemaType('quehacemos')
         .child(S.documentTypeList('quehacemos').title('Que hacemos')),
       S.divider(),
+      S.listItem()
+        .title('Pagina Inicio')
+        .icon(GiCastle)
+        .child(
+          S.list()
+            .title('Pagina Inicio')
+            .items([
+              S.listItem()
+                .title('Quienes Somos')
+                .child(S.document().schemaType('home_page').documentId('home_page').title('Pagina de inicio')),
+              S.listItem()
+                .title('Contacto')
+                .child(S.document().schemaType('contacto').documentId('contacto')),
+            ])
+        ),
+      S.divider(),
       ...S.documentTypeListItems().filter(
         (listItem) =>
           ![
+            'home_page',
+            'contacto',
             'quienes_somos',
             'nuestra_historia',
             'recursos',
